@@ -1,5 +1,3 @@
-# Licht-ingenius2020
-
 # Licht
 
 ## Description 
