@@ -1,0 +1,64 @@
+In Python, variables are names, 
+
+that can be assigned a value,
+
+and then used, to refer to that value, 
+ 
+throughout your code.
+
+Values are assigned to variable names ,
+
+using a special symbol called, 
+
+the assignment operator.
+
+The = operator ,
+
+
+takes the value to the 
+
+
+right of the operator, 
+
+
+and assigns it to the name on the left.
+
+Start typing the following.
+
+
+greeting = 
+
+
+double quotes 
+
+
+Hello 
+
+
+
+World 
+
+
+double quotes. 
+
+
+
+new line.
+
+
+print 
+
+
+bracket 
+
+
+greeting 
+
+
+
+bracket
+
+
+Run your Code now.
+
+
