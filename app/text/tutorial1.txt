@@ -59,6 +59,9 @@ greeting
 bracket
 
 
-Run your Code now.
+Run your Code now 
+
+by pressing control + enter
+
 
 

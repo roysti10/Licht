@@ -1,0 +1,94 @@
+ Python has several functions that are readily available for use. 
+
+ These functions are called built-in functions
+
+ For example,
+
+ The python len() function is used to return the length (the number of items) of an object.
+
+
+ The python pow() function is used to compute the power of a number. 
+
+
+ It returns x to the power of y. 
+
+
+ let us look at  how 
+
+ the len 
+
+ and the pow
+
+ function work now
+
+ Your code should print
+
+ the length of the string Python
+
+ which is 6
+
+ and four squared
+
+ which is 16
+  
+
+ Start typing now
+
+
+ s = 
+
+ quotes 
+
+ Python 
+
+ quotes
+
+ new line
+
+  l =
+  
+  len 
+
+  bracket
+
+   s
+
+  bracket
+
+  
+ print 
+
+ bracket 
+
+	l
+
+ bracket
+
+ new line
+
+ p =
+
+ pow
+
+ bracket
+
+ 4 
+ 
+ comma 
+ 
+ 2
+
+ bracket
+ 
+ print
+
+ bracket
+
+	p
+
+ bracket   
+
+
+ Run your code now
+
+ by pressing control + enter

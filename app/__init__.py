@@ -17,7 +17,16 @@ def home():
 
 @app.route("/tutorial", methods=["GET", "POST"])
 def tutorial():
-    mp3_file, text = speak("app/text/tutorial1.txt")
+    selected = request.args.get('type')
+    fname="tutorial1.txt"
+    if selected == "one":
+    	fname="tutorial1.txt"
+    elif selected == "two":
+    	fname="tutorial2.txt"
+    elif selected == "three":
+    	fname="tutorial3.txt"
+    path=os.path.join("app/text",fname)
+    mp3_file, text = speak(path)
     print(request.method)
     if request.method == "POST":
         code = request.form["code"]

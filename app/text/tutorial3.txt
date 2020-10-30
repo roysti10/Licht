@@ -1,0 +1,64 @@
+ The if statement is used to control 
+
+ the program flow in a Python program. 
+
+
+ This makes it possible to decide at runtime whether 
+
+
+ certain program parts should be executed or not.
+
+
+ The simplest form of an if statement 
+
+
+ in a Python program looks like this:
+
+ if 
+
+ condition colon
+    
+ tabspace  
+
+
+ statement
+
+
+ The statement is only executed 
+
+ if the condition 
+
+ is True.
+
+ Start typing now
+
+
+ x = 33
+
+ y = 200
+
+ if x > y colon
+
+ tabspace
+
+  print
+  
+  bracket
+  
+  double quotes
+  
+  y is greater than x
+  
+  double quotes
+  
+  bracket
+
+ Because y is greater than x
+
+ the code should print 
+
+ y is greater than x
+ 
+ Run your code now
+
+ by pressing control + enter
