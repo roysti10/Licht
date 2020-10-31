@@ -91,7 +91,13 @@
     
     	 event.preventDefault();
        	 window.history.back();
-    	}
-		})
+    }
+    else if (event.which == 82){
+    	window.location.reload()
+    }
+    else if(event.which == 80){
+    	document.getElementById('vc').pause()
+    }
+	})
 </script>	
 </body>

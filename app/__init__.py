@@ -20,11 +20,14 @@ def tutorial():
     selected = request.args.get('type')
     fname="tutorial1.txt"
     if selected == "one":
-    	fname="tutorial1.txt"
+        name = "1"
+        fname="tutorial1.txt"
     elif selected == "two":
-    	fname="tutorial2.txt"
+        name = "2"
+        fname="tutorial2.txt"
     elif selected == "three":
-    	fname="tutorial3.txt"
+        fname = "tutorial3.txt"
+        name = "3"
     path=os.path.join("app/text",fname)
     mp3_file, text = speak(path)
     print(request.method)
@@ -52,8 +55,8 @@ def tutorial():
             out = output
             print(output)
         return render_template(
-            "editor.html", code=code, text=text.replace("\n", ""), output=out, fname=""
+            "editor.html", code=code, text=text.replace("\n", ""), output=out, fname="" , name = name
         )
     return render_template(
-        "editor.html", code="", output="", text=text.replace("\n", ""), fname=mp3_file
+        "editor.html", code="", output="", text=text.replace("\n", ""), fname=mp3_file , name = name
     )
