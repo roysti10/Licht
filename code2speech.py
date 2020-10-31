@@ -6,6 +6,8 @@ import os
 
 
 def textToWav(text, path):
+    if os.path.exists(path):
+        os.remove(path)
     subprocess.call(["espeak", "-w" + path, text])
 
 

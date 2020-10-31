@@ -3,17 +3,20 @@
 <head>
   <title>Licht</title>
   
-  <script type="text/javascript" src = "{{ url_for('static', filename='codemirror/editor/lib/codemirror.js') }}"></script>
+  <script type="text/javascript" src = "{{ url_for('static', filename='codemirror.js') }}"></script>
   
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='codemirror/editor/lib/codemirror.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='codemirror.css') }}">
   
-  <script type="text/javascript" src = "{{ url_for('static', filename='codemirror/editor/mode/python/python.js')}}"></script>
+  <script type="text/javascript" src = "{{ url_for('static', filename='python/python.js')}}"></script>
   
-  <script type="text/javascript" src = "{{ url_for('static', filename='codemirror/editor/addon/edit/closebrackets.js')}}"></script>
+  <script type="text/javascript" src = "{{ url_for('static', filename='closebrackets.js')}}"></script>
   
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename = 'codemirror/editor/theme/dracula.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename = 'dracula.css')}}">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   
   <style type="text/css">
     body{
@@ -82,7 +85,7 @@
     <h3> Description </h3>
     <h5>{{text}}</h5>
   </div>
-  <form action="/tutorial" method="post" id="c">
+  <form action="/tutorial" method="post" id="compile">
   
   <textarea id = "editor" name ="code">{{code}}</textarea>
   <button type="submit" 
@@ -107,7 +110,18 @@
                                         theme: 'dracula',
                                         lineNumbers : true,
                                         autoCloseBrackets : true})
-    
+    $(document).on('keyup', function (event) {
+    if (event.which == 13 && event.ctrlKey) {
+     $('#tut').trigger('pause')
+     $('#compile').submit()
+    }
+    else if(event.which == 82){
+      window.location.reload()
+    }
+    else if(event.which == 80){
+      $('#tut').trigger('pause')
+    }})
+
   </script>
 
 </body>

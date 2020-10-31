@@ -12,6 +12,7 @@ app.config.from_object("config")
 
 @app.route("/")
 def home():
+    speak("app/text/output.txt")
     return render_template("index.html")
 
 
@@ -19,6 +20,7 @@ def home():
 def tutorial():
     selected = request.args.get('type')
     fname="tutorial1.txt"
+    name = ""
     if selected == "one":
         name = "1"
         fname="tutorial1.txt"

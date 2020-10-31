@@ -1,0 +1,19 @@
+Welcome to the tutorial section of Licht
+
+We have three tutorials for you
+
+Press 1 to access first tutorial 
+
+Variables in Python
+
+Press 2 to access Second tutorial
+
+Built in functions in python
+
+Press 3 to access third tutorial
+
+Conditional statements in python
+
+Press P to pause this message
+
+Press R or refresh the page to repeat this message or unpause this medsage
