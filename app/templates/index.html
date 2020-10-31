@@ -9,16 +9,16 @@
 	}
 	.center{
 	 position: absolute;
-	 /*background-color: #282a36;*/
+	 background-color: #282a36;
 	 color: white;
 
-  left: 50%;
+  left:50%;
 
   top: 50%;
 
   transform: translate(-50%, -50%);
 
-  /*border: 5px solid white;*/
+  border: 5px solid white;
 
   padding: 10px;	
 	}
@@ -29,14 +29,6 @@
 		color: white;
 	}
 	
-	.Link{
-		background-color: #282a36;
-		width: 700px;
-		padding: 20px;
-	 	color: white;
-			
-	
-	}
 	
 	
 	.navbar-brand{
@@ -55,6 +47,7 @@
 	.hyperlink{
 	
 		color:white;
+		font-size:large;
 	
 	}
 </style>
@@ -81,21 +74,15 @@
 	<div class="center">
 	<ul class="tutorial-link-list">
 	<li>
-	<button class="Link">
 	<a class="hyperlink" id = "first" href="{{ url_for('tutorial', type='one') }}">Tutorial 1 : Variables in Python </a> 
-	</button>
 	</li>
 	
 	<li>
-	<button class="Link">
-	<a class="hyperlink" id = "second" href="{{ url_for('tutorial', type='two') }}">Tutorial 2: Built-in Functions in Python</a>
-	</button> 
+	<a class="hyperlink" id = "second" href="{{ url_for('tutorial', type='two') }}">Tutorial 2: Built-in Functions in Python</a> 
 	</li>
 	
 	<li>
-	<button class ="Link">
-	<a class="hyperlink" id = "third" href="{{ url_for('tutorial', type='three') }}">Tutorial 3: Conditional statements in Python</a>
-	</button> 
+	<a class="hyperlink" id = "third" href="{{ url_for('tutorial', type='three') }}">Tutorial 3: Conditional statements in Python</a> 
 	</li>
 	
 	</ul>
