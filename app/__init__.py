@@ -12,7 +12,7 @@ app.config.from_object("config")
 
 @app.route("/")
 def home():
-    speak("app/text/output.txt")
+    speak("app/text/vc.txt")
     return render_template("index.html")
 
 

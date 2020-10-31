@@ -9,7 +9,7 @@
 	}
 	.center{
 	 position: absolute;
-	 background-color: #282a36;
+	 /*background-color: #282a36;*/
 	 color: white;
 
   left: 50%;
@@ -18,7 +18,7 @@
 
   transform: translate(-50%, -50%);
 
-  border: 5px solid white;
+  /*border: 5px solid white;*/
 
   padding: 10px;	
 	}
@@ -27,6 +27,35 @@
 		top: 30%;
 		left: 45%;
 		color: white;
+	}
+	
+	.Link{
+		background-color: #282a36;
+		width: 700px;
+		padding: 20px;
+	 	color: white;
+			
+	
+	}
+	
+	
+	.navbar-brand{
+	
+		font-size:180%;
+	
+	
+	}
+	
+	.tutorial-link-list{
+	
+		list-style-type:none;
+	
+	
+	}
+	.hyperlink{
+	
+		color:white;
+	
 	}
 </style>
 <body>
@@ -50,17 +79,23 @@
       <source src="{{ url_for('static', filename='vc.mp3') }}" type="audio/mpeg">
   	</audio>
 	<div class="center">
-	<ul>
+	<ul class="tutorial-link-list">
 	<li>
-	<a id = "first" href="{{ url_for('tutorial', type='one') }}">Tutorial 1 : Variables in Python </a> 
+	<button class="Link">
+	<a class="hyperlink" id = "first" href="{{ url_for('tutorial', type='one') }}">Tutorial 1 : Variables in Python </a> 
+	</button>
 	</li>
 	
 	<li>
-	<a id = "second" href="{{ url_for('tutorial', type='two') }}">Tutorial 2: Built-in Functions in Python</a> 
+	<button class="Link">
+	<a class="hyperlink" id = "second" href="{{ url_for('tutorial', type='two') }}">Tutorial 2: Built-in Functions in Python</a>
+	</button> 
 	</li>
 	
 	<li>
-	<a id = "third" href="{{ url_for('tutorial', type='three') }}">Tutorial 3: Conditional statements in Python</a> 
+	<button class ="Link">
+	<a class="hyperlink" id = "third" href="{{ url_for('tutorial', type='three') }}">Tutorial 3: Conditional statements in Python</a>
+	</button> 
 	</li>
 	
 	</ul>

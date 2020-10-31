@@ -51,12 +51,20 @@
       position: absolute; 
       color :white; 
       top: 25%;
-      right: 700px;
+      right: 60%;
       left: 0;
     } 
     .navbar{
       color: white;
     }
+    
+    .navbar-brand{
+	
+		font-size:180%;
+	
+	
+	}
+	
   </style>
 </head>
 <body>
@@ -90,8 +98,8 @@
   <textarea id = "editor" name ="code">{{code}}</textarea>
   <button type="submit" 
           class="btn btn-success pull-right"
-          id = "run" 
-          >Success
+          id = "run"
+          >Run
   </button>
   </form>
   <div class="ml-auto card w-50 h-25">
@@ -120,7 +128,16 @@
     }
     else if(event.which == 80){
       $('#tut').trigger('pause')
-    }})
+    }
+    
+    else if(event.which==27){
+    
+    	event.preventDefault();
+    	window.history.back();
+    
+    }
+    
+    })
 
   </script>
 
