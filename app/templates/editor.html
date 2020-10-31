@@ -123,10 +123,10 @@
      $('#tut').trigger('pause')
      $('#compile').submit()
     }
-    else if(event.which == 82){
+    else if(event.which == 82 && event.ctrlKey){
       window.location.reload()
     }
-    else if(event.which == 80){
+    else if(event.which == 80 && event.altKey){
       $('#tut').trigger('pause')
     }
     
